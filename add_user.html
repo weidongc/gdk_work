@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>添加信息</title>
+	<style>
+		form{
+			background-color: #ddd;
+			width: 330px;
+			margin: 0 auto;
+			padding: 10px;
+		}
+		span{
+			display: inline-block;
+			width: 130px; 
+			height: 30px;
+		}
+	</style>
+</head>
+<body>
+	<form id='id1' method='post' action="/user/add">
+	<span>姓名：</span><input type="text" name='sname'><br>
+	<span>性别：</span><label><input type="radio" name='sex' value="男">男</label>
+		<label><input type="radio" name='sex' value="女">女</label>	
+	<br>
+	<span>年龄：</span><input type="text" name='age'><br>
+	<span>学历：</span><select name="education" >
+		<option>初中</option>
+		<option>高中</option>
+		<option>中专</option>
+		<option>大专</option>
+		<option>本科</option>
+	</select><br>
+	<span>毕业学校：</span><input type="text" name='school'><br>
+	<span>专业：</span><input type="text" name='major'><br>
+	<span>工作经历：</span><textarea name="work_experience" cols="22" rows="5"></textarea><br>
+	<span>电话：</span><input type="text" name='phone'><br>
+	<span>QQ：</span><input type="text" name='QQ'><br>
+	<span>现居住地：</span><input type="text" name='address'><br>
+	<span>紧急联系人：</span><input type="text" name='linkman'><br>
+	<span>紧急联系人电话：</span><input type="text" name='linkman_phone'><br>
+	<input type="submit">
+</form>
+</body>
+</html>
